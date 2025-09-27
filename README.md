@@ -1,40 +1,42 @@
-# Análisis de LTV, CAC y ROMI 
+# LTV, CAC, and ROMI Analysis
 
-### Descripción del Proyecto
+### Project Description
 
-En este proyecto, se realizaron prácticas en el departamento de analítica de Showz, una empresa dedicada a la venta de entradas de eventos. La tarea principal fue optimizar los gastos de marketing. Para ello, se utilizaron datos de la empresa Showz desde enero de 2017 hasta diciembre de 2018, incluyendo un archivo con pedidos y otro con estadísticas de gastos de marketing.
+In this project, I worked on analytics tasks for Showz, a company specializing in event ticket sales.<br>
+The main goal was to optimize marketing spend by analyzing company data from January 2017 to December 2018, which included both order records and marketing expense statistics.<br>
 
+### Objectives:
 
-### Objetivos:
+The project focused on answering key questions:
 
-El proyecto se centró en investigar los siguientes aspectos:
+   * How do customers use the service?
+   * When do customers begin making purchases?
+   * How much revenue does each customer contribute over time?
+   * At what point do generated revenues cover the cost of customer acquisition?
 
-   * Cómo los clientes utilizan el servicio.
-   * Cuándo los clientes comienzan a realizar compras.
-   * Cuánto dinero aporta cada cliente a la compañía.
-   * Cuándo los ingresos generados cubren el costo de adquisición de los clientes.
+### Methodology:
 
-### Metodología:
+I used Python as the primary tool for data processing, analysis, and visualization. The workflow included:
 
-Para llevar a cabo este proyecto utilicé Python como herramienta principal para el procesamiento, análisis y visualización de datos. Las etapas incluyeron:
+   - Exploratory data analysis: cleaning missing values, identifying duplicates, and transforming data for easier analysis.
+   - User retention calculations to understand how many customers remain active over time.
+   - LTV (Customer Lifetime Value) calculations to estimate revenue per customer across their lifecycle.
+   - CAC (Customer Acquisition Cost) calculations to measure the average cost of acquiring a new customer.
+   - ROMI (Return on Marketing Investment) calculations to evaluate the financial return of marketing campaigns.
 
-   * Análisis exploratorio de datos: limpieza de valores nulos, identificación de duplicados y transformación de datos para facilidatar su análisis.
-   * Cálculo de la retención de los usuarios, para conocer cuantos usuarios permanecen con nosotros a través del tiempo.
-   * Cálculo de LTV (Valor del ciclo de vida del cliente), para conocer cuanto dinero podemos obtener con cada cliente a lo largo de su relación.
-   * Cálculo del CAC (Costo de Adquisicón del Cliente) para conocer cuanto nos cuentas en promodio adquirir un nuevo cliente.
-   * Cálculo del ROMI (Retorno de inversión de mercadotecnia) esto nos permite medir el retorno económico de las campañas de mkt.
+### Key Findings:
 
-### Conclusiones:
+   * Average initial cohort revenue was around `$`5 USD, with only two cohorts increasing by more than 100%, while the rest remained below that level.
 
-Teniendo en cuenta que el promedio de las ganancias iniciales de las cohortes han sido de aproximadamente `$` 5 dólares, solo en estas dos cohortes se han incrementado más del 100% las otras cohortes se han quedado por debajo.
+   * Marketing company 3 brought in the highest number of customers (an average of 5 customers per payment), followed by companies 4 and 5 with an average of 2 customers per payment. Notably, 5 of the campaigns brought in no customers at all.
 
-La compañía de mkt que más cliente nos trajo es la de la compañía 3, con un promedio de 5 clientes cada vez que realizamos un pago, seguido por la 4 y 5 que nos trajo en promedio 2 clientes, el detalle esta en que 5 de nuestras campañas no nos traen clientes.
+   * Company 3 was also the most expensive, charging `$`3.90 per customer, followed by campaigns 4 and 5 with CACs of `$`1.67 and `$`1.41 per customer, respectively.
 
-La compañía que más nos cobra es la 3, nos cobra `$`3.90 por cliente, seguida de las campañas 4 y 5 con un CAC de `$` 1.67 y `$` 1.41 por cliente, respectivamente
+   * Marketing campaigns overall failed to recover their investment, with lower-cost campaigns showing a better ROMI due to reduced spend. Specifically, campaign 3, despite being the costliest and generating the most customers, produced only a 33.64% return, far below expectations. It was estimated that this campaign would need to acquire at least 15 customers per payment to break even.
 
-Tendremos que ver la eficiencia de las campañas de marketing para poder saber el porque tan baja la retención, así como las utilidaes. El análisis reveló que las campañas publicitarias no han recuperado la inversión realizada, con algunas campañas de menor costo mostrando un mejor Retorno sobre la Inversión en Marketing (ROMI) debido a su bajo gasto. Específicamente, la campaña publicitaria número 3, a pesar de ser la más costosa y la que genera más clientes, solo está produciendo un rendimiento del 33.64%, lo que indica una recuperación de la inversión muy por debajo de lo esperado. Se sugiere la necesidad de obtener en promedio 15 clientes por cada pago publicitario en esta campaña para alcanzar al menos el punto de equilibrio. Los resultados indican la necesidad de una revisión profunda del equipo de marketing y los canales utilizados.
+These findings highlight the need for a comprehensive review of the marketing team’s strategies and channel performance to improve retention and profitability.
 
-### Lenguajes y herramientas principales:
+### Tools & Technologies:
 
-   * Python (pandas, matplotlib, numpy, seaborn, matplotlib)
-   * Jupyter Notebook para la documentación del flujo de trabajo
+   * Python (pandas, matplotlib, numpy, seaborn, matplotlib).
+   * Jupyter Notebook for workflow documentation.
